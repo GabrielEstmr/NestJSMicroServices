@@ -4,6 +4,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 // import { AppService } from './app.service';
 import { JogadoresModule } from './jogadores/jogadores.module';
 import { CategoriasModule } from './categorias/categorias.module';
+import { DesafiosModule } from './desafios/desafios.module';
 
 
 //SINGLETON: Modulo que pode ser importado por VARIOS outros modulos
@@ -21,7 +22,8 @@ import { CategoriasModule } from './categorias/categorias.module';
         useUnifiedTopology: true,
         useFindAndModify: false
       }),
-    CategoriasModule
+    CategoriasModule,
+    DesafiosModule
   ],
   controllers: [],
   providers: [],
